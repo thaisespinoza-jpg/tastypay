@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Promociones - TastyPay</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= ENCABEZADO Y NAVEGACIÓN PRINCIPAL ================= -->
+  <header class="header">
+    <div class="header__container">
+      <!-- Logo -->
+      <a href="index.html" class="header__logo">
+        <img src="assets/img/logo-tastypay.svg" alt="TastyPay Logo">
+      </a>
+
+      <!-- Navegación principal -->
+      <nav class="nav" aria-label="Navegación principal">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="index.html" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="sobre-nosotros.html" class="nav__link">Sobre nosotros</a></li>
+          <li class="nav__item"><a href="canjea-puntos.html" class="nav__link">Canjea tus puntos</a></li>
+          <li class="nav__item"><a href="promociones.html" class="nav__link nav__link--active" aria-current="page">Promociones</a></li>
+          <li class="nav__item"><a href="ayuda.html" class="nav__link">Ayuda</a></li>
+        </ul>
+      </nav>
+
+      <!-- Botones de autenticación -->
+      <div class="header__auth">
+        <a href="login.html" class="btn btn--outline">Iniciar sesión</a>
+        <a href="registro.html" class="btn btn--primary">Registrarse</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= CONTENIDO PRINCIPAL ================= -->
+  <main class="main-content">
+    <div class="container">
+      
+      <!-- Título de la página -->
+      <h1 class="page-title">PROMOCIONES</h1>
+
+      <!-- Banner de promoción semanal -->
+      <section class="promo-banner" aria-labelledby="promo-banner-title">
+        <div class="promo-banner__content">
+          <h2 id="promo-banner-title" class="promo-banner__title">SOLO POR ESTA SEMANA</h2>
+          <p class="promo-banner__description">Tus puntos se duplicarán en todos los restaurantes.</p>
+          <a href="#establecimientos" class="btn btn--secondary">Ver Restaurantes</a>
+        </div>
+        <div class="promo-banner__media">
+          <img src="assets/img/vaso-promo.png" alt="Mano sosteniendo un vaso de café a rayas rojas y blancas">
+        </div>
+      </section>
+
+      <!-- Sección de tarjetas de establecimientos -->
+      <section id="establecimientos" class="establishments" aria-labelledby="establishments-heading">
+        <h2 id="establishments-heading" class="establishments__subtitle">Visita estas cafeterías y recibe más puntos</h2>
+
+        <div class="establishments__list">
+          
+          <!-- Tarjeta 1: Cocolatte -->
+          <article class="promo-card">
+            <div class="promo-card__info">
+              <img src="assets/img/logos/cocolatte.png" alt="Logo de Cocolatte" class="promo-card__logo">
+              <div class="promo-card__details">
+                <h3 class="promo-card__name">Cocolatte</h3>
+                <p class="promo-card__date">Válido solo el <time datetime="2026-09-10">10 de Septiembre</time></p>
+              </div>
+            </div>
+            <div class="promo-card__points">
+              <span>+5 pts</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta 2: Brew'd Coffee -->
+          <article class="promo-card">
+            <div class="promo-card__info">
+              <img src="assets/img/logos/brewd-coffee.png" alt="Logo de Brew'd Coffee" class="promo-card__logo">
+              <div class="promo-card__details">
+                <h3 class="promo-card__name">Brew'd Coffee</h3>
+                <p class="promo-card__date">Válido desde el <time datetime="2026-09-01">1</time> al <time datetime="2026-09-09">9 de Septiembre</time></p>
+              </div>
+            </div>
+            <div class="promo-card__points">
+              <span>+10 pts</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta 3: Kunst Kaffee -->
+          <article class="promo-card">
+            <div class="promo-card__info">
+              <img src="assets/img/logos/kunst-kaffee.png" alt="Logo de Kunst Kaffee" class="promo-card__logo">
+              <div class="promo-card__details">
+                <h3 class="promo-card__name">Kunst Kaffee</h3>
+                <p class="promo-card__date">Válido solo el <time datetime="2026-09-08">8</time> y <time datetime="2026-09-09">9 de Septiembre</time></p>
+              </div>
+            </div>
+            <div class="promo-card__points">
+              <span>+12 pts</span>
+            </div>
+          </article>
+
+          <!-- Tarjeta 4: El Saó -->
+          <article class="promo-card">
+            <div class="promo-card__info">
+              <img src="assets/img/logos/el-sao.png" alt="Logo de El Saó" class="promo-card__logo">
+              <div class="promo-card__details">
+                <h3 class="promo-card__name">El Saó</h3>
+                <p class="promo-card__date">Válido solo el <time datetime="2026-09-20">20</time> y <time datetime="2026-09-21">21 de Septiembre</time></p>
+              </div>
+            </div>
+            <div class="promo-card__points">
+              <span>+20 pts</span>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ================= PIE DE PÁGINA ================= -->
+  <footer class="footer">
+    <div class="footer__top">
+      <!-- Marca y lema -->
+      <div class="footer__brand">
+        <img src="assets/img/logo-tastypay.svg" alt="TastyPay Logo" class="footer__logo">
+        <p class="footer__tagline">Recompensas reales por cada experiencia en establecimientos.</p>
+      </div>
+
+      <!-- Enlaces de navegación -->
+      <div class="footer__column">
+        <h4 class="footer__heading">NAVEGACIÓN</h4>
+        <ul class="footer__list">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+          <li><a href="canjea-puntos.html">Canjea tus puntos</a></li>
+          <li><a href="promociones.html">Promociones</a></li>
+          <li><a href="ayuda.html">Ayuda</a></li>
+        </ul>
+      </div>
+
+      <!-- Información de contacto -->
+      <div class="footer__column">
+        <h4 class="footer__heading">CONTACTO</h4>
+        <ul class="footer__list">
+          <li><a href="tel:+59176543892">+591 76543892</a></li>
+          <li><a href="mailto:tastypay@hotmail.com">tastypay@hotmail.com</a></li>
+        </ul>
+      </div>
+
+      <!-- Redes sociales -->
+      <div class="footer__column">
+        <h4 class="footer__heading">REDES SOCIALES</h4>
+        <div class="footer__socials">
+          <a href="#" aria-label="Facebook de TastyPay"><img src="assets/img/icons/facebook.svg" alt="Facebook"></a>
+          <a href="#" aria-label="LinkedIn de TastyPay"><img src="assets/img/icons/linkedin.svg" alt="LinkedIn"></a>
+          <a href="#" aria-label="Instagram de TastyPay"><img src="assets/img/icons/instagram.svg" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra inferior de derechos -->
+    <div class="footer__bottom">
+      <p>© 2026 TastyPay. Todos los derechos reservados.</p>
+      <p>Hecho con amor para los amantes de la comida</p>
+    </div>
+  </footer>
+
+</body>
+</html>
