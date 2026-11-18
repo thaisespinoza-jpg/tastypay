@@ -36,6 +36,275 @@
       </div>
     </header>
 
+    <!-- SECCIÓN 1: ESTABLECIMIENTOS AFILIADOS -->
+    <section class="establishments-section" id="establecimientos">
+      <div class="container">
+        <div class="establishments-header">
+          <div class="header-titles">
+            <span class="badge-light">ESTABLECIMIENTOS AFILIADOS</span>
+            <h2>
+              Gana puntos en <span class="text-accent">cientos</span><br />de
+              lugares
+            </h2>
+          </div>
+
+          <nav
+            class="categories-filter"
+            aria-label="Categorías de establecimientos"
+          >
+            <button
+              type="button"
+              class="filter-btn active"
+              data-category="todos"
+            >
+              Todos
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-category="comida-rapida"
+            >
+              Comida rápida
+            </button>
+            <button type="button" class="filter-btn" data-category="belleza">
+              Belleza
+            </button>
+            <button type="button" class="filter-btn" data-category="cafeterias">
+              Cafeterías
+            </button>
+            <button
+              type="button"
+              class="filter-btn"
+              data-category="emprendimiento"
+            >
+              Emprendimiento
+            </button>
+          </nav>
+        </div>
+
+        <div class="establishments-grid">
+          <article class="establishment-card" data-category="belleza">
+            <div class="card-icon">💅</div>
+            <h3>Zagal Uñas</h3>
+            <p class="card-category">Salón de uñas</p>
+            <span class="points-pill">★ 30 puntos</span>
+          </article>
+
+          <article class="establishment-card" data-category="comida-rapida">
+            <div class="card-icon">🍗</div>
+            <h3>Tropical Chicken</h3>
+            <p class="card-category">Comida rápida</p>
+            <span class="points-pill">★ 35 puntos</span>
+          </article>
+
+          <article class="establishment-card" data-category="cafeterias">
+            <div class="card-icon">☕</div>
+            <h3>Cocolatte</h3>
+            <p class="card-category">Cafetería</p>
+            <span class="points-pill">★ 30 puntos</span>
+          </article>
+
+          <article class="establishment-card" data-category="belleza">
+            <div class="card-icon">🫖</div>
+            <h3>Jad Salón</h3>
+            <p class="card-category">Salón de belleza</p>
+            <span class="points-pill">★ 40 puntos</span>
+          </article>
+
+          <article class="establishment-card" data-category="emprendimiento">
+            <div class="card-icon">🌿</div>
+            <h3>El Saó</h3>
+            <p class="card-category">Emprendimiento</p>
+            <span class="points-pill">★ 20 puntos</span>
+          </article>
+
+          <article class="establishment-card" data-category="cafeterias">
+            <div class="card-icon">🧋</div>
+            <h3>Brew'd Coffee</h3>
+            <p class="card-category">Bebidas frías</p>
+            <span class="points-pill">★ 10 puntos</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: SISTEMA DE PUNTOS -->
+    <section class="points-system-section" id="sistema-puntos">
+      <div class="container points-layout">
+        <div class="points-info">
+          <span class="badge-dark">SISTEMA DE PUNTOS</span>
+          <h2>Tus puntos,<br /><span class="text-lime">tus reglas</span></h2>
+          <p class="points-description">
+            Gana TastyPoints en cada visita, compártelos con amigos o canjéalos
+            por beneficios reales. Sin complicaciones.
+          </p>
+
+          <ul class="benefits-list">
+            <li>
+              <span class="check-circle">✓</span>
+              <span>Puntos acumulados en tiempo real</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span>Comparte hasta 10 puntos por día</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span>Historial completo de transacciones</span>
+            </li>
+            <li>
+              <span class="check-circle">✓</span>
+              <span>Simple y al instante</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="points-dashboard">
+          <div class="balance-card">
+            <div class="balance-header">
+              <span class="balance-label">VISUALIZA TUS PUNTOS</span>
+              <p class="balance-amount">100</p>
+            </div>
+
+            <div class="balance-icon" aria-hidden="true">
+              <svg width="56" height="56" viewBox="0 0 64 64" fill="none">
+                <ellipse
+                  cx="26"
+                  cy="24"
+                  rx="10"
+                  ry="4"
+                  stroke="#18181b"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M16 24V32C16 34.2 20.5 36 26 36C31.5 36 36 34.2 36 32V24"
+                  stroke="#18181b"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M16 32V40C16 42.2 20.5 44 26 44C31.5 44 36 42.2 36 40V32"
+                  stroke="#18181b"
+                  stroke-width="2.5"
+                />
+                <path
+                  d="M16 40V48C16 50.2 20.5 52 26 52C31.5 52 36 50.2 36 48V40"
+                  stroke="#18181b"
+                  stroke-width="2.5"
+                />
+                <circle cx="43" cy="43" r="9" fill="#18181b" />
+                <text
+                  x="43"
+                  y="47"
+                  text-anchor="middle"
+                  fill="#e5fa84"
+                  font-size="11"
+                  font-weight="bold"
+                >
+                  P
+                </text>
+                <line
+                  x1="26"
+                  y1="10"
+                  x2="26"
+                  y2="15"
+                  stroke="#18181b"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="38"
+                  y1="13"
+                  x2="35"
+                  y2="17"
+                  stroke="#18181b"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="46"
+                  y1="22"
+                  x2="41"
+                  y2="24"
+                  stroke="#18181b"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+                <line
+                  x1="14"
+                  y1="13"
+                  x2="17"
+                  y2="17"
+                  stroke="#18181b"
+                  stroke-width="2.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+
+            <a href="#historial" class="balance-link"
+              >Visualiza transacciones →</a
+            >
+          </div>
+
+          <div class="action-buttons">
+            <button type="button" class="action-card action-purple">
+              <span class="action-symbol">+</span>
+              <span>Agrega Puntos</span>
+            </button>
+
+            <button type="button" class="action-card action-lime">
+              <span class="action-symbol">⇄</span>
+              <span>Compartir Puntos</span>
+            </button>
+
+            <button type="button" class="action-card action-blue">
+              <span class="action-symbol">📊</span>
+              <span>Mira tus estadísticas</span>
+            </button>
+          </div>
+
+          <div class="history-card" id="historial">
+            <h3 class="history-title">ÚLTIMOS PUNTOS</h3>
+
+            <ul class="history-list">
+              <li class="history-item">
+                <div class="history-left">
+                  <span class="history-badge badge-purple">+</span>
+                  <div class="history-details">
+                    <strong>Agregaste 30 Puntos</strong>
+                    <span>En Burgerhaus & Café</span>
+                  </div>
+                </div>
+                <time class="history-date">01/09</time>
+              </li>
+
+              <li class="history-item">
+                <div class="history-left">
+                  <span class="history-badge badge-lime">⇄</span>
+                  <div class="history-details">
+                    <strong>Compartiste 10 Puntos</strong>
+                    <span>Con Gabriele Gómez</span>
+                  </div>
+                </div>
+                <time class="history-date">28/08</time>
+              </li>
+
+              <li class="history-item">
+                <div class="history-left">
+                  <span class="history-badge badge-purple">+</span>
+                  <div class="history-details">
+                    <strong>Sumaste 10 Puntos</strong>
+                    <span>En Kunst Kaffee</span>
+                  </div>
+                </div>
+                <time class="history-date">20/08</time>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer" id="footer">
       <div class="contenedor footer-columnas">
         <div>
