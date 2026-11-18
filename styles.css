@@ -1,0 +1,126 @@
+/* =========================
+   ESTILOS GENERALES TASTYPAY
+   ========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --azul: #30498f;
+  --azul-oscuro: #263f83;
+  --verde: #dfff70;
+  --lila: #f1f0ff;
+  --lila-texto: #aaa9d4;
+  --texto: #202027;
+  --gris: #777985;
+  --borde: #e6e6ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: #fff;
+  line-height: 1.5;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button,
+input,
+select {
+  font: inherit;
+}
+.contenedor {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+/* ENCABEZADO Y NAVEGACIÓN */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #f1f1f5;
+  position: relative;
+  z-index: 10;
+}
+.nav {
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+.logo {
+  color: var(--azul);
+  font-weight: 900;
+  font-size: 21px;
+  font-style: italic;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+.logo span {
+  color: #243e85;
+}
+.logo small {
+  color: var(--verde);
+  font-size: 10px;
+  vertical-align: top;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.menu a {
+  color: #686b76;
+  font-size: 12px;
+}
+.menu a:hover,
+.menu a.activo {
+  color: var(--azul);
+}
+.acciones-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 22px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.boton:hover {
+  transform: translateY(-2px);
+}
+.boton-azul {
+  background: var(--azul);
+  color: #fff;
+}
+.boton-borde {
+  border-color: var(--azul);
+  color: var(--azul);
+  background: #fff;
+}
+.boton-pequeno {
+  padding: 7px 13px;
+  font-size: 10px;
+}
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: none;
+  color: var(--azul);
+  font-size: 25px;
+  cursor: pointer;
+}
