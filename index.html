@@ -384,6 +384,206 @@
           </div>
         </div>
       </section>
+
+      <!-- SECCIÓN 3: OFERTAS Y PROMOCIONES -->
+      <section class="offers-section" id="ofertas">
+        <div class="container offers-layout">
+          <!-- Columna izquierda: Información y banner semanal -->
+          <div class="offers-info">
+            <span class="badge-light">RECIBE NOTIFICACIONES Y OFERTAS</span>
+            <h2>
+              Ofertas que llegan<br /><span class="text-accent">a ti</span>
+            </h2>
+            <p class="offers-description">
+              Recibe notificaciones de restaurantes con puntos extra,
+              promociones exclusivas y alertas de tus locales favoritos.
+            </p>
+
+            <div class="weekly-promo-card">
+              <h3>SOLO POR ESTA SEMANA</h3>
+              <p>Tus puntos se duplicarán en todos los restaurantes.</p>
+              <a href="#establecimientos" class="btn-primary-dark"
+                >Ver Restaurantes</a
+              >
+            </div>
+          </div>
+
+          <!-- Columna derecha: Tarjetas de promociones -->
+          <div class="offers-list-wrapper">
+            <h3 class="offers-list-title">
+              VISITA ESTAS CAFETERÍAS Y RECIBE MÁS PUNTOS
+            </h3>
+
+            <div class="offers-list">
+              <article class="offer-card">
+                <div class="offer-left">
+                  <div class="offer-logo logo-cocolatte">
+                    <img src="img/cocolatte.png" alt="Logo Cocolatte" />
+                  </div>
+                  <div class="offer-details">
+                    <h4>Cocolatte</h4>
+                    <p>Válido solo el 10 de Septiembre</p>
+                  </div>
+                </div>
+                <span class="offer-points">+5 pts</span>
+              </article>
+
+              <article class="offer-card">
+                <div class="offer-left">
+                  <div class="offer-logo logo-brewd">
+                    <img src="img/brewd-coffee.png" alt="Logo Brew'd Coffee" />
+                  </div>
+                  <div class="offer-details">
+                    <h4>Brew'd Coffee</h4>
+                    <p>Válido desde el 1 al 9 de Septiembre</p>
+                  </div>
+                </div>
+                <span class="offer-points">+10 pts</span>
+              </article>
+
+              <article class="offer-card">
+                <div class="offer-left">
+                  <div class="offer-logo logo-kunst">
+                    <img src="img/kunst-kaffee.png" alt="Logo Kunst Kaffee" />
+                  </div>
+                  <div class="offer-details">
+                    <h4>Kunst Kaffee</h4>
+                    <p>Válido solo el 8 y 9 de Septiembre</p>
+                  </div>
+                </div>
+                <span class="offer-points">+12 pts</span>
+              </article>
+
+              <article class="offer-card">
+                <div class="offer-left">
+                  <div class="offer-logo logo-elsao">
+                    <img src="img/el-sao.png" alt="Logo El Saó" />
+                  </div>
+                  <div class="offer-details">
+                    <h4>El Saó</h4>
+                    <p>Válido solo el 20 y 21 de Septiembre</p>
+                  </div>
+                </div>
+                <span class="offer-points">+20 pts</span>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECCIÓN 4: REGISTRO DE NEGOCIOS -->
+      <section class="business-register-section" id="registro-negocio">
+        <div class="container register-layout">
+          <!-- Columna izquierda: Beneficios para establecimientos -->
+          <div class="register-info">
+            <span class="badge-lime">¿ERES UN ESTABLECIMIENTO?</span>
+            <h2>Registra tu<br /><span class="text-accent">negocio</span></h2>
+            <p class="register-description">
+              Únete a la red de restaurantes, cafeterías y emprendimientos que
+              ya fidelizan a sus clientes con TastyPay. Clientes que vuelven,
+              datos en tiempo real.
+            </p>
+
+            <ul class="business-benefits-list">
+              <li class="benefit-item">
+                <div class="benefit-icon">📈</div>
+                <div class="benefit-text">
+                  <h4>Más visitas recurrentes</h4>
+                  <p>
+                    Los usuarios regresan para seguir acumulando puntos en tu
+                    local.
+                  </p>
+                </div>
+              </li>
+
+              <li class="benefit-item">
+                <div class="benefit-icon">📊</div>
+                <div class="benefit-text">
+                  <h4>Dashboard de analítica</h4>
+                  <p>
+                    Conoce el comportamiento de tus clientes con datos en tiempo
+                    real.
+                  </p>
+                </div>
+              </li>
+
+              <li class="benefit-item">
+                <div class="benefit-icon">🎯</div>
+                <div class="benefit-text">
+                  <h4>Notificaciones a tus clientes</h4>
+                  <p>
+                    Lanza ofertas de puntos extra directamente a los usuarios de
+                    la app.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Columna derecha: Formulario de registro -->
+          <div class="register-form-card">
+            <h3>Continuar como establecimiento</h3>
+
+            <form action="#" method="POST" class="business-form">
+              <div class="form-group">
+                <label for="nombre-negocio">NOMBRE DEL NEGOCIO</label>
+                <input
+                  type="text"
+                  id="nombre-negocio"
+                  name="nombre-negocio"
+                  placeholder="Ej. Burgerhaus & Café"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="correo-negocio">CORREO ELECTRÓNICO</label>
+                <input
+                  type="email"
+                  id="correo-negocio"
+                  name="correo-negocio"
+                  placeholder="contacto@minegocio.com"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="celular-negocio">NÚMERO DE CELULAR</label>
+                <input
+                  type="tel"
+                  id="celular-negocio"
+                  name="celular-negocio"
+                  placeholder="+591 12345678"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="tipo-negocio">TIPO DE NEGOCIO</label>
+                <select id="tipo-negocio" name="tipo-negocio" required>
+                  <option value="" disabled selected>
+                    Selecciona una categoría
+                  </option>
+                  <option value="comida-rapida">Comida rápida</option>
+                  <option value="cafeterias">Cafeterías</option>
+                  <option value="belleza">Belleza</option>
+                  <option value="emprendimiento">Emprendimiento</option>
+                </select>
+              </div>
+
+              <div class="form-checkbox">
+                <input type="checkbox" id="terminos" name="terminos" required />
+                <label for="terminos">
+                  Al continuar aceptas los <a href="#">Términos</a> y la
+                  <a href="#">Política de privacidad</a> de TastyPay.
+                </label>
+              </div>
+
+              <button type="submit" class="btn-submit">Validar Datos →</button>
+            </form>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer" id="footer">
       <div class="contenedor footer-columnas">
