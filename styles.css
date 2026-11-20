@@ -124,3 +124,777 @@ select {
   font-size: 25px;
   cursor: pointer;
 }
+
+/* =========================================
+   1. ESTABLECIMIENTOS AFILIADOS
+   ========================================= */
+.establishments-section {
+  padding: 64px 0 76px;
+  background-color: #ffffff;
+}
+
+.establishments-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 24px;
+  margin-bottom: 36px;
+}
+
+.badge-light {
+  display: inline-block;
+  background-color: #f1f3fd;
+  color: #2c3e8c;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+
+.header-titles h2 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #18181b;
+}
+
+.text-accent {
+  color: #293b89;
+}
+
+.categories-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-btn {
+  border: none;
+  background-color: #f3f5fc;
+  color: #293b89;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.filter-btn:hover {
+  background-color: #e4e8f8;
+}
+
+.filter-btn.active {
+  background-color: #293b89;
+  color: #ffffff;
+}
+
+.establishments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.establishment-card {
+  background-color: #f7f8fe;
+  border: 1px solid #e4e8f7;
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.establishment-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(41, 59, 137, 0.07);
+}
+
+.card-icon {
+  width: 46px;
+  height: 46px;
+  background-color: #cdd7f7;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.establishment-card h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: #18181b;
+  margin-bottom: 2px;
+}
+
+.card-category {
+  font-size: 13px;
+  color: #8c90a3;
+  margin-bottom: 14px;
+}
+
+.points-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background-color: #c7ef46;
+  color: #18181b;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+
+/* =========================================
+   2. SISTEMA DE PUNTOS ("Tus puntos, tus reglas")
+   ========================================= */
+.points-system-section {
+  background-color: #263783;
+  color: #ffffff;
+  padding: 84px 0;
+}
+
+.points-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 64px;
+  align-items: center;
+}
+
+.badge-dark {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #d7ef78;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.points-info h2 {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1.08;
+  margin-bottom: 20px;
+}
+
+.text-lime {
+  color: #e4f883;
+}
+
+.points-description {
+  font-size: 16px;
+  color: #cbd5f5;
+  max-width: 440px;
+  margin-bottom: 32px;
+}
+
+.benefits-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.benefits-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  color: #e5ecfb;
+}
+
+.check-circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #e4f883;
+  color: #263783;
+  font-size: 12px;
+  font-weight: 800;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.points-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.balance-card {
+  background-color: #e4f883;
+  color: #18181b;
+  border-radius: 22px;
+  padding: 28px 32px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.balance-label {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #4a542f;
+  margin-bottom: 6px;
+}
+
+.balance-amount {
+  font-size: 48px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.balance-link {
+  grid-column: 1 / -1;
+  justify-self: center;
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #263783;
+  text-decoration: none;
+}
+
+.balance-link:hover {
+  text-decoration: underline;
+}
+
+.action-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+}
+
+.action-card {
+  border: none;
+  border-radius: 16px;
+  padding: 18px 12px;
+  font-family: inherit;
+  font-size: 12px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+}
+
+.action-symbol {
+  font-size: 22px;
+  line-height: 1;
+}
+
+.action-purple {
+  background-color: #bfa9fd;
+  color: #18181b;
+}
+
+.action-lime {
+  background-color: #e4f883;
+  color: #18181b;
+}
+
+.action-blue {
+  background-color: #3c4f9e;
+  color: #ffffff;
+}
+
+.history-card {
+  background-color: #364996;
+  border-radius: 20px;
+  padding: 24px;
+}
+
+.history-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #b4c0ec;
+  margin-bottom: 14px;
+}
+
+.history-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.history-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.history-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.history-badge {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 800;
+  color: #18181b;
+  flex-shrink: 0;
+}
+
+.badge-purple {
+  background-color: #bfa9fd;
+}
+
+.badge-lime {
+  background-color: #e4f883;
+}
+
+.history-details strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.history-details span {
+  font-size: 12px;
+  color: #a6b4e6;
+}
+
+.history-date {
+  font-size: 12px;
+  color: #a6b4e6;
+}
+
+/* =========================================
+   3. OFERTAS Y PROMOCIONES
+   ========================================= */
+.offers-section {
+  padding: 84px 0;
+  background-color: #ffffff;
+}
+
+.offers-layout {
+  display: grid;
+  grid-template-columns: 0.95fr 1.15fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.offers-info h2 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.08;
+  color: #18181b;
+  margin-bottom: 18px;
+}
+
+.offers-description {
+  font-size: 15px;
+  color: #6b7280;
+  max-width: 420px;
+  margin-bottom: 28px;
+}
+
+.weekly-promo-card {
+  background-color: #e9fa9c;
+  border-radius: 20px;
+  padding: 26px 28px;
+  max-width: 440px;
+}
+
+.weekly-promo-card h3 {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  color: #18181b;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+}
+
+.weekly-promo-card p {
+  font-size: 14px;
+  color: #4b5530;
+  margin-bottom: 18px;
+}
+
+.btn-primary-dark {
+  display: inline-block;
+  background-color: #263783;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 11px 22px;
+  border-radius: 999px;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary-dark:hover {
+  background-color: #1d2b68;
+}
+
+.offers-list-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6b7280;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+.offers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.offer-card {
+  background-color: #f7f8fe;
+  border: 1px solid #eceffb;
+  border-radius: 16px;
+  padding: 16px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(41, 59, 137, 0.05);
+}
+
+.offer-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.offer-logo {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background-color: #e5e9f8;
+}
+
+.offer-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.offer-details h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #18181b;
+  margin-bottom: 2px;
+}
+
+.offer-details p {
+  font-size: 12px;
+  color: #8c90a3;
+}
+
+.offer-points {
+  font-size: 14px;
+  font-weight: 800;
+  color: #263783;
+  white-space: nowrap;
+}
+
+/* =========================================
+   4. REGISTRO DE NEGOCIOS
+   ========================================= */
+.business-register-section {
+  background-color: #f7f8fe;
+  padding: 84px 0;
+}
+
+.register-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.05fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.badge-lime {
+  display: inline-block;
+  background-color: #e9fa9c;
+  color: #3f4b1f;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border-radius: 999px;
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+
+.register-info h2 {
+  font-size: 46px;
+  font-weight: 800;
+  line-height: 1.08;
+  color: #18181b;
+  margin-bottom: 18px;
+}
+
+.register-description {
+  font-size: 15px;
+  color: #6b7280;
+  max-width: 450px;
+  margin-bottom: 32px;
+}
+
+.business-benefits-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.benefit-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background-color: #e4e9fb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  flex-shrink: 0;
+}
+
+.benefit-text h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #18181b;
+  margin-bottom: 2px;
+}
+
+.benefit-text p {
+  font-size: 13px;
+  color: #7b8096;
+}
+
+/* Tarjeta del formulario */
+.register-form-card {
+  background-color: #ffffff;
+  border: 1px solid #eceffb;
+  border-radius: 24px;
+  padding: 36px 34px;
+  box-shadow: 0 14px 36px rgba(38, 55, 131, 0.06);
+}
+
+.register-form-card h3 {
+  font-size: 20px;
+  font-weight: 800;
+  color: #18181b;
+  margin-bottom: 24px;
+}
+
+.business-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form-group label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #6b7280;
+  text-transform: uppercase;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  background-color: #f6f7fc;
+  border: 1px solid #e2e6f3;
+  border-radius: 12px;
+  padding: 13px 16px;
+  font-family: inherit;
+  font-size: 14px;
+  color: #18181b;
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #263783;
+  background-color: #ffffff;
+}
+
+.form-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.form-checkbox input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  accent-color: #263783;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.form-checkbox label {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.45;
+}
+
+.form-checkbox a {
+  color: #263783;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.btn-submit {
+  width: 100%;
+  border: none;
+  background-color: #263783;
+  color: #ffffff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 15px 24px;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 6px;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.btn-submit:hover {
+  background-color: #1d2b68;
+  transform: translateY(-1px);
+}
+
+/* =========================================
+   5. ADAPTACIÓN A TABLETS Y CELULARES
+   ========================================= */
+@media (max-width: 960px) {
+  .establishments-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .points-layout,
+  .offers-layout,
+  .register-layout {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .weekly-promo-card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 18px;
+  }
+
+  .establishments-section,
+  .points-system-section,
+  .offers-section,
+  .business-register-section {
+    padding: 56px 0;
+  }
+
+  .header-titles h2,
+  .points-info h2,
+  .offers-info h2,
+  .register-info h2 {
+    font-size: 32px;
+  }
+
+  .establishments-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .action-buttons {
+    grid-template-columns: 1fr;
+  }
+
+  .balance-card {
+    padding: 22px;
+  }
+
+  .balance-amount {
+    font-size: 38px;
+  }
+
+  .register-form-card {
+    padding: 24px 20px;
+    border-radius: 18px;
+  }
+}
