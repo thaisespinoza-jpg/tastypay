@@ -125,776 +125,339 @@ select {
   cursor: pointer;
 }
 
-/* =========================================
-   1. ESTABLECIMIENTOS AFILIADOS
-   ========================================= */
-.establishments-section {
-  padding: 64px 0 76px;
-  background-color: #ffffff;
+/* ESTABLECIMIENTOS */
+.establecimientos {
+  padding-top: 25px;
 }
-
-.establishments-header {
+.encabezado-seccion {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  gap: 24px;
-  margin-bottom: 36px;
+  align-items: end;
+  gap: 20px;
+  margin: 10px 0 22px;
 }
-
-.badge-light {
-  display: inline-block;
-  background-color: #f1f3fd;
-  color: #2c3e8c;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin-bottom: 14px;
-  text-transform: uppercase;
-}
-
-.header-titles h2 {
-  font-size: 40px;
-  font-weight: 800;
-  line-height: 1.15;
-  color: #18181b;
-}
-
-.text-accent {
-  color: #293b89;
-}
-
-.categories-filter {
+.filtros {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 6px;
 }
-
-.filter-btn {
-  border: none;
-  background-color: #f3f5fc;
-  color: #293b89;
-  font-family: inherit;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 10px 18px;
-  border-radius: 999px;
-  cursor: pointer;
-  transition:
-    background-color 0.2s ease,
-    color 0.2s ease;
-}
-
-.filter-btn:hover {
-  background-color: #e4e8f8;
-}
-
-.filter-btn.active {
-  background-color: #293b89;
-  color: #ffffff;
-}
-
-.establishments-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 22px;
-}
-
-.establishment-card {
-  background-color: #f7f8fe;
-  border: 1px solid #e4e8f7;
-  border-radius: 18px;
-  padding: 24px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.establishment-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 24px rgba(41, 59, 137, 0.07);
-}
-
-.card-icon {
-  width: 46px;
-  height: 46px;
-  background-color: #cdd7f7;
-  border-radius: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  margin-bottom: 16px;
-}
-
-.establishment-card h3 {
-  font-size: 17px;
-  font-weight: 700;
-  color: #18181b;
-  margin-bottom: 2px;
-}
-
-.card-category {
-  font-size: 13px;
-  color: #8c90a3;
-  margin-bottom: 14px;
-}
-
-.points-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background-color: #c7ef46;
-  color: #18181b;
-  font-size: 12px;
-  font-weight: 700;
-  padding: 5px 12px;
-  border-radius: 999px;
-}
-
-/* =========================================
-   2. SISTEMA DE PUNTOS ("Tus puntos, tus reglas")
-   ========================================= */
-.points-system-section {
-  background-color: #263783;
-  color: #ffffff;
-  padding: 84px 0;
-}
-
-.points-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.05fr;
-  gap: 64px;
-  align-items: center;
-}
-
-.badge-dark {
-  display: inline-block;
-  background-color: rgba(255, 255, 255, 0.12);
-  color: #d7ef78;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.points-info h2 {
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 1.08;
-  margin-bottom: 20px;
-}
-
-.text-lime {
-  color: #e4f883;
-}
-
-.points-description {
-  font-size: 16px;
-  color: #cbd5f5;
-  max-width: 440px;
-  margin-bottom: 32px;
-}
-
-.benefits-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.benefits-list li {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 15px;
-  color: #e5ecfb;
-}
-
-.check-circle {
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  background-color: #e4f883;
-  color: #263783;
-  font-size: 12px;
-  font-weight: 800;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.points-dashboard {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.balance-card {
-  background-color: #e4f883;
-  color: #18181b;
-  border-radius: 22px;
-  padding: 28px 32px;
-  display: grid;
-  grid-template-columns: 1fr auto;
-  align-items: center;
-}
-
-.balance-label {
-  display: block;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #4a542f;
-  margin-bottom: 6px;
-}
-
-.balance-amount {
-  font-size: 48px;
-  font-weight: 800;
-  line-height: 1;
-}
-
-.balance-link {
-  grid-column: 1 / -1;
-  justify-self: center;
-  margin-top: 10px;
-  font-size: 13px;
-  font-weight: 700;
-  color: #263783;
-  text-decoration: none;
-}
-
-.balance-link:hover {
-  text-decoration: underline;
-}
-
-.action-buttons {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 14px;
-}
-
-.action-card {
-  border: none;
-  border-radius: 16px;
-  padding: 18px 12px;
-  font-family: inherit;
-  font-size: 12px;
-  font-weight: 700;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.action-card:hover {
-  transform: translateY(-2px);
-}
-
-.action-symbol {
-  font-size: 22px;
-  line-height: 1;
-}
-
-.action-purple {
-  background-color: #bfa9fd;
-  color: #18181b;
-}
-
-.action-lime {
-  background-color: #e4f883;
-  color: #18181b;
-}
-
-.action-blue {
-  background-color: #3c4f9e;
-  color: #ffffff;
-}
-
-.history-card {
-  background-color: #364996;
+.filtro {
+  border: 0;
   border-radius: 20px;
-  padding: 24px;
+  padding: 7px 12px;
+  font-size: 10px;
+  background: var(--lila);
+  color: var(--azul);
+  cursor: pointer;
+}
+.filtro.activo,
+.filtro:hover {
+  background: var(--azul);
+  color: #fff;
+}
+.grid-establecimientos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+.local-card {
+  background: var(--lila);
+  border-radius: 12px;
+  padding: 14px;
+  min-height: 120px;
+}
+.local-card.oculto {
+  display: none;
+}
+.local-icono {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: #dcdcff;
+  font-size: 17px;
+}
+.local-card h3 {
+  font-size: 12px;
+  margin-top: 8px;
+}
+.local-card p {
+  font-size: 10px;
+  margin: 2px 0 8px;
+}
+.puntos-pill {
+  display: inline-block;
+  background: var(--verde);
+  color: var(--azul);
+  border-radius: 12px;
+  padding: 3px 8px;
+  font-size: 9px;
+  font-weight: bold;
 }
 
-.history-title {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #b4c0ec;
-  margin-bottom: 14px;
+/* SISTEMA DE PUNTOS */
+.puntos {
+  background: var(--azul);
+  color: #fff;
 }
-
-.history-list {
+.puntos-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 45px;
+}
+.etiqueta-clara {
+  background: #5369a5;
+  color: var(--verde);
+}
+.puntos h2 {
+  margin: 14px 0;
+}
+.puntos h2 span {
+  color: var(--verde);
+}
+.puntos-texto p {
+  color: #dce2f4;
+  max-width: 390px;
+}
+.lista-check {
   list-style: none;
-  display: flex;
-  flex-direction: column;
+  margin-top: 18px;
+}
+.lista-check li {
+  color: inherit;
+  font-size: 11px;
+  margin: 9px 0;
+}
+.lista-check li::before {
+  content: "✓";
+  color: var(--verde);
+  font-weight: bold;
+  margin-right: 9px;
+}
+.panel-puntos {
+  background: #3b559b;
+  padding: 15px;
+  border-radius: 15px;
+}
+.resumen-puntos {
+  background: var(--verde);
+  color: #101010;
+  padding: 14px;
+  border-radius: 10px;
+  position: relative;
+  min-height: 100px;
+}
+.resumen-puntos span {
+  display: block;
+  font-size: 8px;
+}
+.resumen-puntos strong {
+  display: block;
+  font-size: 32px;
+}
+.resumen-puntos small {
+  color: var(--azul);
+  font-size: 9px;
+}
+.resumen-puntos b {
+  position: absolute;
+  right: 20px;
+  top: 25px;
+  font-size: 32px;
+}
+.acciones-puntos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin: 10px 0;
+}
+.acciones-puntos div {
+  border-radius: 8px;
+  background: #a99af4;
+  padding: 10px 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+}
+.acciones-puntos div:nth-child(2) {
+  background: var(--verde);
+  color: var(--azul);
+}
+.acciones-puntos div:nth-child(3) {
+  background: #526aa9;
+}
+.acciones-puntos small {
+  display: block;
+  font-size: 8px;
+}
+.historial {
+  background: #526aa9;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 9px;
+}
+.historial p {
+  color: #fff;
+  border-top: 1px solid #ffffff22;
+  padding: 7px 0;
+  font-size: 9px;
+}
+.historial p small {
+  float: right;
+  color: #dce2f4;
 }
 
-.history-item {
-  display: flex;
-  justify-content: space-between;
+/* OFERTAS Y FORMULARIO */
+.ofertas-contenido {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
   align-items: center;
-  padding: 12px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
-
-.history-item:last-child {
-  border-bottom: none;
-  padding-bottom: 0;
+.ofertas h2 {
+  margin: 10px 0;
 }
-
-.history-left {
+.ofertas h2 span {
+  color: var(--azul);
+}
+.ofertas-contenido > div:first-child > p {
+  max-width: 390px;
+}
+.banner-oferta {
+  margin-top: 18px;
+  padding: 14px;
+  background: var(--verde);
+  border-radius: 12px;
+}
+.banner-oferta strong {
+  font-size: 11px;
+}
+.banner-oferta p {
+  font-size: 10px;
+  margin: 3px 0 9px;
+  color: #505050;
+}
+.lista-ofertas > strong {
+  font-size: 10px;
+  display: block;
+  margin-bottom: 12px;
+}
+.oferta-item {
   display: flex;
   align-items: center;
-  gap: 14px;
+  gap: 10px;
+  background: var(--lila);
+  border-radius: 10px;
+  padding: 9px;
+  margin: 8px 0;
 }
-
-.history-badge {
+.oferta-item > span {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 14px;
-  font-weight: 800;
-  color: #18181b;
-  flex-shrink: 0;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: #c8c7ed;
 }
-
-.badge-purple {
-  background-color: #bfa9fd;
+.oferta-item div {
+  flex: 1;
 }
-
-.badge-lime {
-  background-color: #e4f883;
-}
-
-.history-details strong {
+.oferta-item b {
   display: block;
-  font-size: 13px;
-  font-weight: 700;
-  color: #ffffff;
+  font-size: 10px;
 }
-
-.history-details span {
-  font-size: 12px;
-  color: #a6b4e6;
+.oferta-item small {
+  display: block;
+  font-size: 8px;
+  color: var(--gris);
 }
-
-.history-date {
-  font-size: 12px;
-  color: #a6b4e6;
+.oferta-item > strong {
+  color: var(--azul);
+  font-size: 10px;
 }
-
-/* =========================================
-   3. OFERTAS Y PROMOCIONES
-   ========================================= */
-.offers-section {
-  padding: 84px 0;
-  background-color: #ffffff;
+.registro-negocio {
+  background: #f5f4ff;
 }
-
-.offers-layout {
+.registro-contenido {
   display: grid;
-  grid-template-columns: 0.95fr 1.15fr;
-  gap: 56px;
-  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
 }
-
-.offers-info h2 {
-  font-size: 46px;
-  font-weight: 800;
-  line-height: 1.08;
-  color: #18181b;
-  margin-bottom: 18px;
+.registro-contenido h2 {
+  margin: 12px 0;
 }
-
-.offers-description {
-  font-size: 15px;
-  color: #6b7280;
+.registro-contenido > div > p {
   max-width: 420px;
-  margin-bottom: 28px;
 }
-
-.weekly-promo-card {
-  background-color: #e9fa9c;
-  border-radius: 20px;
-  padding: 26px 28px;
-  max-width: 440px;
-}
-
-.weekly-promo-card h3 {
-  font-size: 14px;
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  color: #18181b;
-  margin-bottom: 6px;
-  text-transform: uppercase;
-}
-
-.weekly-promo-card p {
-  font-size: 14px;
-  color: #4b5530;
-  margin-bottom: 18px;
-}
-
-.btn-primary-dark {
-  display: inline-block;
-  background-color: #263783;
-  color: #ffffff;
-  font-size: 13px;
-  font-weight: 700;
-  text-decoration: none;
-  padding: 11px 22px;
-  border-radius: 999px;
-  transition: background-color 0.2s ease;
-}
-
-.btn-primary-dark:hover {
-  background-color: #1d2b68;
-}
-
-.offers-list-title {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  color: #6b7280;
-  margin-bottom: 16px;
-  text-transform: uppercase;
-}
-
-.offers-list {
+.beneficios li {
   display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.offer-card {
-  background-color: #f7f8fe;
-  border: 1px solid #eceffb;
-  border-radius: 16px;
-  padding: 16px 22px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 16px;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.offer-card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(41, 59, 137, 0.05);
-}
-
-.offer-left {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-
-.offer-logo {
-  width: 46px;
-  height: 46px;
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-  background-color: #e5e9f8;
-}
-
-.offer-logo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.offer-details h4 {
-  font-size: 15px;
-  font-weight: 700;
-  color: #18181b;
-  margin-bottom: 2px;
-}
-
-.offer-details p {
-  font-size: 12px;
-  color: #8c90a3;
-}
-
-.offer-points {
-  font-size: 14px;
-  font-weight: 800;
-  color: #263783;
-  white-space: nowrap;
-}
-
-/* =========================================
-   4. REGISTRO DE NEGOCIOS
-   ========================================= */
-.business-register-section {
-  background-color: #f7f8fe;
-  padding: 84px 0;
-}
-
-.register-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.05fr;
-  gap: 60px;
-  align-items: center;
-}
-
-.badge-lime {
-  display: inline-block;
-  background-color: #e9fa9c;
-  color: #3f4b1f;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.08em;
-  padding: 6px 14px;
-  border-radius: 999px;
-  margin-bottom: 18px;
-  text-transform: uppercase;
-}
-
-.register-info h2 {
-  font-size: 46px;
-  font-weight: 800;
-  line-height: 1.08;
-  color: #18181b;
-  margin-bottom: 18px;
-}
-
-.register-description {
-  font-size: 15px;
-  color: #6b7280;
-  max-width: 450px;
-  margin-bottom: 32px;
-}
-
-.business-benefits-list {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.benefit-item {
-  display: flex;
-  align-items: flex-start;
-  gap: 14px;
-}
-
-.benefit-icon {
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  background-color: #e4e9fb;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 17px;
-  flex-shrink: 0;
-}
-
-.benefit-text h4 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #18181b;
-  margin-bottom: 2px;
-}
-
-.benefit-text p {
-  font-size: 13px;
-  color: #7b8096;
-}
-
-/* Tarjeta del formulario */
-.register-form-card {
-  background-color: #ffffff;
-  border: 1px solid #eceffb;
-  border-radius: 24px;
-  padding: 36px 34px;
-  box-shadow: 0 14px 36px rgba(38, 55, 131, 0.06);
-}
-
-.register-form-card h3 {
-  font-size: 20px;
-  font-weight: 800;
-  color: #18181b;
-  margin-bottom: 24px;
-}
-
-.business-form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-}
-
-.form-group {
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-
-.form-group label {
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  color: #6b7280;
-  text-transform: uppercase;
-}
-
-.form-group input,
-.form-group select {
-  width: 100%;
-  background-color: #f6f7fc;
-  border: 1px solid #e2e6f3;
-  border-radius: 12px;
-  padding: 13px 16px;
-  font-family: inherit;
-  font-size: 14px;
-  color: #18181b;
-  outline: none;
-  transition:
-    border-color 0.2s ease,
-    background-color 0.2s ease;
-}
-
-.form-group input::placeholder {
-  color: #9ca3af;
-}
-
-.form-group input:focus,
-.form-group select:focus {
-  border-color: #263783;
-  background-color: #ffffff;
-}
-
-.form-checkbox {
-  display: flex;
-  align-items: flex-start;
   gap: 10px;
-  margin-top: 4px;
+  color: var(--texto);
 }
-
-.form-checkbox input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-  margin-top: 2px;
-  accent-color: #263783;
-  cursor: pointer;
-  flex-shrink: 0;
+.beneficios li::before {
+  content: "";
+  display: none;
 }
-
-.form-checkbox label {
-  font-size: 12px;
-  color: #6b7280;
-  line-height: 1.45;
+.beneficios b {
+  display: block;
+  font-size: 11px;
 }
-
-.form-checkbox a {
-  color: #263783;
-  font-weight: 600;
-  text-decoration: underline;
+.beneficios small {
+  display: block;
+  color: var(--gris);
+  font-size: 10px;
 }
-
-.btn-submit {
-  width: 100%;
-  border: none;
-  background-color: #263783;
-  color: #ffffff;
-  font-family: inherit;
+.formulario {
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 5px 20px #253c8010;
+}
+.formulario h3 {
   font-size: 14px;
-  font-weight: 700;
-  padding: 15px 24px;
-  border-radius: 999px;
-  cursor: pointer;
-  margin-top: 6px;
-  transition:
-    background-color 0.2s ease,
-    transform 0.2s ease;
+  margin-bottom: 14px;
 }
-
-.btn-submit:hover {
-  background-color: #1d2b68;
-  transform: translateY(-1px);
+.formulario label {
+  display: block;
+  color: #777985;
+  font-size: 8px;
+  font-weight: bold;
+  margin: 10px 0 5px;
 }
-
-/* =========================================
-   5. ADAPTACIÓN A TABLETS Y CELULARES
-   ========================================= */
-@media (max-width: 960px) {
-  .establishments-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .points-layout,
-  .offers-layout,
-  .register-layout {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .weekly-promo-card {
-    max-width: 100%;
-  }
+.formulario input:not([type="checkbox"]),
+.formulario select {
+  width: 100%;
+  border: 1px solid #dedff0;
+  border-radius: 7px;
+  padding: 9px;
+  font-size: 10px;
+  outline: none;
+  background: #f8f8ff;
 }
-
-@media (max-width: 600px) {
-  .container {
-    padding: 0 18px;
-  }
-
-  .establishments-section,
-  .points-system-section,
-  .offers-section,
-  .business-register-section {
-    padding: 56px 0;
-  }
-
-  .header-titles h2,
-  .points-info h2,
-  .offers-info h2,
-  .register-info h2 {
-    font-size: 32px;
-  }
-
-  .establishments-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .action-buttons {
-    grid-template-columns: 1fr;
-  }
-
-  .balance-card {
-    padding: 22px;
-  }
-
-  .balance-amount {
-    font-size: 38px;
-  }
-
-  .register-form-card {
-    padding: 24px 20px;
-    border-radius: 18px;
-  }
+.formulario input:focus,
+.formulario select:focus {
+  border-color: var(--azul);
+}
+.formulario .aceptar {
+  display: flex;
+  gap: 7px;
+  align-items: flex-start;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.formulario .aceptar input {
+  margin-top: 2px;
+}
+.ancho {
+  width: 100%;
+}
+.mensaje-formulario {
+  color: var(--azul);
+  font-weight: bold;
+  font-size: 11px;
+  margin-top: 8px;
 }

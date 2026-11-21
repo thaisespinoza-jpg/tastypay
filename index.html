@@ -113,479 +113,239 @@
         </div>
       </section>
 
-      <!-- SECCIÓN 1: ESTABLECIMIENTO AFILIADO -->
-      <section class="establishments-section" id="establecimientos">
-        <div class="container">
-          <div class="establishments-header">
-            <div class="header-titles">
-              <span class="badge-light">ESTABLECIMIENTOS AFILIADOS</span>
-              <h2>
-                Gana puntos en <span class="text-accent">cientos</span><br />de
-                lugares
-              </h2>
-            </div>
-
-            <nav
-              class="categories-filter"
-              aria-label="Categorías de establecimientos"
-            >
-              <button
-                type="button"
-                class="filter-btn active"
-                data-category="todos"
-              >
-                Todos
-              </button>
-              <button
-                type="button"
-                class="filter-btn"
-                data-category="comida-rapida"
-              >
-                Comida rápida
-              </button>
-              <button type="button" class="filter-btn" data-category="belleza">
-                Belleza
-              </button>
-              <button
-                type="button"
-                class="filter-btn"
-                data-category="cafeterias"
-              >
+      <section class="seccion establecimientos" id="establecimientos">
+        <div class="contenedor">
+          <span class="subtitulo">ESTABLECIMIENTOS AFILIADOS</span>
+          <div class="encabezado-seccion">
+            <h2>Gana puntos en cientos<br />de lugares</h2>
+            <div class="filtros">
+              <button class="filtro activo" data-filtro="todos">Todos</button>
+              <button class="filtro" data-filtro="comida">Comida rápida</button>
+              <button class="filtro" data-filtro="bebidas">Bebidas</button>
+              <button class="filtro" data-filtro="cafeterias">
                 Cafeterías
               </button>
-              <button
-                type="button"
-                class="filter-btn"
-                data-category="emprendimiento"
-              >
-                Emprendimiento
+              <button class="filtro" data-filtro="emprendimientos">
+                Emprendimientos
               </button>
-            </nav>
+            </div>
           </div>
-
-          <div class="establishments-grid">
-            <article class="establishment-card" data-category="belleza">
-              <div class="card-icon">💅</div>
-              <h3>Zagal Uñas</h3>
-              <p class="card-category">Salón de uñas</p>
-              <span class="points-pill">★ 30 puntos</span>
+          <div class="grid-establecimientos">
+            <article class="local-card" data-categoria="comida">
+              <div class="local-icono">🍟</div>
+              <h3>Zagal Wings</h3>
+              <p>Comida rápida</p>
+              <span class="puntos-pill">✦ +15 puntos</span>
             </article>
-
-            <article class="establishment-card" data-category="comida-rapida">
-              <div class="card-icon">🍗</div>
+            <article class="local-card" data-categoria="comida">
+              <div class="local-icono">🍗</div>
               <h3>Tropical Chicken</h3>
-              <p class="card-category">Comida rápida</p>
-              <span class="points-pill">★ 35 puntos</span>
+              <p>Pollo y hamburguesas</p>
+              <span class="puntos-pill">✦ +20 puntos</span>
             </article>
-
-            <article class="establishment-card" data-category="cafeterias">
-              <div class="card-icon">☕</div>
-              <h3>Cocolatte</h3>
-              <p class="card-category">Cafetería</p>
-              <span class="points-pill">★ 30 puntos</span>
+            <article class="local-card" data-categoria="cafeterias">
+              <div class="local-icono">☕</div>
+              <h3>Coquette</h3>
+              <p>Cafetería</p>
+              <span class="puntos-pill">✦ +10 puntos</span>
             </article>
-
-            <article class="establishment-card" data-category="belleza">
-              <div class="card-icon">🫖</div>
-              <h3>Jad Salón</h3>
-              <p class="card-category">Salón de belleza</p>
-              <span class="points-pill">★ 40 puntos</span>
+            <article class="local-card" data-categoria="comida">
+              <div class="local-icono">🥪</div>
+              <h3>Jad Salim</h3>
+              <p>Comida y snacks</p>
+              <span class="puntos-pill">✦ +15 puntos</span>
             </article>
-
-            <article class="establishment-card" data-category="emprendimiento">
-              <div class="card-icon">🌿</div>
-              <h3>El Saó</h3>
-              <p class="card-category">Emprendimiento</p>
-              <span class="points-pill">★ 20 puntos</span>
+            <article class="local-card" data-categoria="bebidas">
+              <div class="local-icono">🥤</div>
+              <h3>El Sad</h3>
+              <p>Bebidas</p>
+              <span class="puntos-pill">✦ +20 puntos</span>
             </article>
-
-            <article class="establishment-card" data-category="cafeterias">
-              <div class="card-icon">🧋</div>
-              <h3>Brew'd Coffee</h3>
-              <p class="card-category">Bebidas frías</p>
-              <span class="points-pill">★ 10 puntos</span>
+            <article class="local-card" data-categoria="cafeterias">
+              <div class="local-icono">🍰</div>
+              <h3>Brown's Coffee</h3>
+              <p>Café y postres</p>
+              <span class="puntos-pill">✦ +15 puntos</span>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- SECCIÓN 2: SISTEMA DE PUNTOS -->
-      <section class="points-system-section" id="sistema-puntos">
-        <div class="container points-layout">
-          <div class="points-info">
-            <span class="badge-dark">SISTEMA DE PUNTOS</span>
-            <h2>Tus puntos,<br /><span class="text-lime">tus reglas</span></h2>
-            <p class="points-description">
+      <section class="seccion puntos">
+        <div class="contenedor puntos-contenido">
+          <div class="puntos-texto">
+            <span class="etiqueta etiqueta-clara">SISTEMA DE PUNTOS</span>
+            <h2>Tus puntos,<br />tus reglas</h2>
+            <p>
               Gana TastyPoints en cada visita, compártelos con amigos o
-              canjéalos por beneficios reales. Sin complicaciones.
+              cámbialos por beneficios reales. Sin complicaciones.
             </p>
-
-            <ul class="benefits-list">
-              <li>
-                <span class="check-circle">✓</span>
-                <span>Puntos acumulados en tiempo real</span>
-              </li>
-              <li>
-                <span class="check-circle">✓</span>
-                <span>Comparte hasta 10 puntos por día</span>
-              </li>
-              <li>
-                <span class="check-circle">✓</span>
-                <span>Historial completo de transacciones</span>
-              </li>
-              <li>
-                <span class="check-circle">✓</span>
-                <span>Simple y al instante</span>
-              </li>
+            <ul class="lista-check">
+              <li>Puntos acumulados en tiempo real</li>
+              <li>Comparte hasta 10 puntos por día</li>
+              <li>Historial completo de transacciones</li>
+              <li>Simple y al instante</li>
             </ul>
           </div>
-
-          <div class="points-dashboard">
-            <div class="balance-card">
-              <div class="balance-header">
-                <span class="balance-label">VISUALIZA TUS PUNTOS</span>
-                <p class="balance-amount">100</p>
-              </div>
-
-              <div class="balance-icon" aria-hidden="true">
-                <svg width="56" height="56" viewBox="0 0 64 64" fill="none">
-                  <ellipse
-                    cx="26"
-                    cy="24"
-                    rx="10"
-                    ry="4"
-                    stroke="#18181b"
-                    stroke-width="2.5"
-                  />
-                  <path
-                    d="M16 24V32C16 34.2 20.5 36 26 36C31.5 36 36 34.2 36 32V24"
-                    stroke="#18181b"
-                    stroke-width="2.5"
-                  />
-                  <path
-                    d="M16 32V40C16 42.2 20.5 44 26 44C31.5 44 36 42.2 36 40V32"
-                    stroke="#18181b"
-                    stroke-width="2.5"
-                  />
-                  <path
-                    d="M16 40V48C16 50.2 20.5 52 26 52C31.5 52 36 50.2 36 48V40"
-                    stroke="#18181b"
-                    stroke-width="2.5"
-                  />
-                  <circle cx="43" cy="43" r="9" fill="#18181b" />
-                  <text
-                    x="43"
-                    y="47"
-                    text-anchor="middle"
-                    fill="#e5fa84"
-                    font-size="11"
-                    font-weight="bold"
-                  >
-                    P
-                  </text>
-                  <line
-                    x1="26"
-                    y1="10"
-                    x2="26"
-                    y2="15"
-                    stroke="#18181b"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                  />
-                  <line
-                    x1="38"
-                    y1="13"
-                    x2="35"
-                    y2="17"
-                    stroke="#18181b"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                  />
-                  <line
-                    x1="46"
-                    y1="22"
-                    x2="41"
-                    y2="24"
-                    stroke="#18181b"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                  />
-                  <line
-                    x1="14"
-                    y1="13"
-                    x2="17"
-                    y2="17"
-                    stroke="#18181b"
-                    stroke-width="2.5"
-                    stroke-linecap="round"
-                  />
-                </svg>
-              </div>
-
-              <a href="#historial" class="balance-link"
-                >Visualiza transacciones →</a
-              >
+          <div class="panel-puntos">
+            <div class="resumen-puntos">
+              <span>VISUALIZA TUS PUNTOS</span><strong>100</strong
+              ><small>Visualiza transacciones →</small><b>✺</b>
             </div>
-
-            <div class="action-buttons">
-              <button type="button" class="action-card action-purple">
-                <span class="action-symbol">+</span>
-                <span>Agrega Puntos</span>
-              </button>
-
-              <button type="button" class="action-card action-lime">
-                <span class="action-symbol">⇄</span>
-                <span>Compartir Puntos</span>
-              </button>
-
-              <button type="button" class="action-card action-blue">
-                <span class="action-symbol">📊</span>
-                <span>Mira tus estadísticas</span>
-              </button>
+            <div class="acciones-puntos">
+              <div>＋<small>Agregar puntos</small></div>
+              <div>⇄<small>Compartir puntos</small></div>
+              <div>▥<small>Ver mis estadísticas</small></div>
             </div>
-
-            <div class="history-card" id="historial">
-              <h3 class="history-title">ÚLTIMOS PUNTOS</h3>
-
-              <ul class="history-list">
-                <li class="history-item">
-                  <div class="history-left">
-                    <span class="history-badge badge-purple">+</span>
-                    <div class="history-details">
-                      <strong>Agregaste 30 Puntos</strong>
-                      <span>En Burgerhaus & Café</span>
-                    </div>
-                  </div>
-                  <time class="history-date">01/09</time>
-                </li>
-
-                <li class="history-item">
-                  <div class="history-left">
-                    <span class="history-badge badge-lime">⇄</span>
-                    <div class="history-details">
-                      <strong>Compartiste 10 Puntos</strong>
-                      <span>Con Gabriele Gómez</span>
-                    </div>
-                  </div>
-                  <time class="history-date">28/08</time>
-                </li>
-
-                <li class="history-item">
-                  <div class="history-left">
-                    <span class="history-badge badge-purple">+</span>
-                    <div class="history-details">
-                      <strong>Sumaste 10 Puntos</strong>
-                      <span>En Kunst Kaffee</span>
-                    </div>
-                  </div>
-                  <time class="history-date">20/08</time>
-                </li>
-              </ul>
+            <div class="historial">
+              <strong>ÚLTIMOS PUNTOS</strong>
+              <p>🟣 &nbsp; Agregaste 20 puntos <small>Hoy, 10:30</small></p>
+              <p>🟢 &nbsp; Compartiste 10 puntos <small>Ayer, 18:20</small></p>
+              <p>🟣 &nbsp; Ganaste 30 puntos <small>12 de septiembre</small></p>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SECCIÓN 3: OFERTAS Y PROMOCIONES -->
-      <section class="offers-section" id="ofertas">
-        <div class="container offers-layout">
-          <!-- Columna izquierda: Información y banner semanal -->
-          <div class="offers-info">
-            <span class="badge-light">RECIBE NOTIFICACIONES Y OFERTAS</span>
-            <h2>
-              Ofertas que llegan<br /><span class="text-accent">a ti</span>
-            </h2>
-            <p class="offers-description">
+      <section class="seccion ofertas">
+        <div class="contenedor ofertas-contenido">
+          <div>
+            <span class="subtitulo">RECIBE NOTIFICACIONES Y OFERTAS</span>
+            <h2>Ofertas que llegan<br /><span>a ti</span></h2>
+            <p>
               Recibe notificaciones de restaurantes con puntos extra,
               promociones exclusivas y alertas de tus locales favoritos.
             </p>
-
-            <div class="weekly-promo-card">
-              <h3>SOLO POR ESTA SEMANA</h3>
-              <p>Tus puntos se duplicarán en todos los restaurantes.</p>
-              <a href="#establecimientos" class="btn-primary-dark"
-                >Ver Restaurantes</a
+            <div class="banner-oferta">
+              <strong>SOLO POR ESTA SEMANA</strong>
+              <p>Tus puntos se duplican en los restaurantes participantes.</p>
+              <a class="boton boton-azul boton-pequeno" href="promociones.html"
+                >Ver restaurantes</a
               >
             </div>
           </div>
-
-          <!-- Columna derecha: Tarjetas de promociones -->
-          <div class="offers-list-wrapper">
-            <h3 class="offers-list-title">
-              VISITA ESTAS CAFETERÍAS Y RECIBE MÁS PUNTOS
-            </h3>
-
-            <div class="offers-list">
-              <article class="offer-card">
-                <div class="offer-left">
-                  <div class="offer-logo logo-cocolatte">
-                    <img src="img/cocolatte.png" alt="Logo Cocolatte" />
-                  </div>
-                  <div class="offer-details">
-                    <h4>Cocolatte</h4>
-                    <p>Válido solo el 10 de Septiembre</p>
-                  </div>
-                </div>
-                <span class="offer-points">+5 pts</span>
-              </article>
-
-              <article class="offer-card">
-                <div class="offer-left">
-                  <div class="offer-logo logo-brewd">
-                    <img src="img/brewd-coffee.png" alt="Logo Brew'd Coffee" />
-                  </div>
-                  <div class="offer-details">
-                    <h4>Brew'd Coffee</h4>
-                    <p>Válido desde el 1 al 9 de Septiembre</p>
-                  </div>
-                </div>
-                <span class="offer-points">+10 pts</span>
-              </article>
-
-              <article class="offer-card">
-                <div class="offer-left">
-                  <div class="offer-logo logo-kunst">
-                    <img src="img/kunst-kaffee.png" alt="Logo Kunst Kaffee" />
-                  </div>
-                  <div class="offer-details">
-                    <h4>Kunst Kaffee</h4>
-                    <p>Válido solo el 8 y 9 de Septiembre</p>
-                  </div>
-                </div>
-                <span class="offer-points">+12 pts</span>
-              </article>
-
-              <article class="offer-card">
-                <div class="offer-left">
-                  <div class="offer-logo logo-elsao">
-                    <img src="img/el-sao.png" alt="Logo El Saó" />
-                  </div>
-                  <div class="offer-details">
-                    <h4>El Saó</h4>
-                    <p>Válido solo el 20 y 21 de Septiembre</p>
-                  </div>
-                </div>
-                <span class="offer-points">+20 pts</span>
-              </article>
+          <div class="lista-ofertas">
+            <strong>VISITA ESTAS CAFETERÍAS Y RECIBE MÁS PUNTOS</strong>
+            <div class="oferta-item">
+              <span>🍵</span>
+              <div>
+                <b>Coquette</b><small>Válido hasta el 30 de septiembre</small>
+              </div>
+              <strong>+15 pts</strong>
+            </div>
+            <div class="oferta-item">
+              <span>☕</span>
+              <div>
+                <b>Brown's Coffee</b
+                ><small>Válido hasta el 30 de septiembre</small>
+              </div>
+              <strong>+10 pts</strong>
+            </div>
+            <div class="oferta-item">
+              <span>🍰</span>
+              <div>
+                <b>Kamut Kaffe</b
+                ><small>Válido hasta el 30 de septiembre</small>
+              </div>
+              <strong>+12 pts</strong>
+            </div>
+            <div class="oferta-item">
+              <span>🥐</span>
+              <div>
+                <b>El Sad</b><small>Válido hasta el 30 de septiembre</small>
+              </div>
+              <strong>+20 pts</strong>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- SECCIÓN 4: REGISTRO DE NEGOCIOS -->
-      <section class="business-register-section" id="registro-negocio">
-        <div class="container register-layout">
-          <!-- Columna izquierda: Beneficios para establecimientos -->
-          <div class="register-info">
-            <span class="badge-lime">¿ERES UN ESTABLECIMIENTO?</span>
-            <h2>Registra tu<br /><span class="text-accent">negocio</span></h2>
-            <p class="register-description">
+      <section class="seccion registro-negocio" id="registro-negocio">
+        <div class="contenedor registro-contenido">
+          <div>
+            <span class="etiqueta">¿ERES UN ESTABLECIMIENTO?</span>
+            <h2>Registra tu<br /><span>negocio</span></h2>
+            <p>
               Únete a la red de restaurantes, cafeterías y emprendimientos que
-              ya fidelizan a sus clientes con TastyPay. Clientes que vuelven,
-              datos en tiempo real.
+              ya fidelizan a sus clientes con TastyPay. ¡Cuantos más, mejor!
             </p>
-
-            <ul class="business-benefits-list">
-              <li class="benefit-item">
-                <div class="benefit-icon">📈</div>
-                <div class="benefit-text">
-                  <h4>Más visitas recurrentes</h4>
-                  <p>
-                    Los usuarios regresan para seguir acumulando puntos en tu
-                    local.
-                  </p>
-                </div>
+            <ul class="beneficios">
+              <li>
+                📍
+                <span
+                  ><b>Más visitas recurrentes</b
+                  ><small
+                    >Los usuarios regresan para seguir acumulando puntos en tu
+                    local.</small
+                  ></span
+                >
               </li>
-
-              <li class="benefit-item">
-                <div class="benefit-icon">📊</div>
-                <div class="benefit-text">
-                  <h4>Dashboard de analítica</h4>
-                  <p>
-                    Conoce el comportamiento de tus clientes con datos en tiempo
-                    real.
-                  </p>
-                </div>
+              <li>
+                📊
+                <span
+                  ><b>Dashboard de analítica</b
+                  ><small
+                    >Conoce el comportamiento de tus clientes con datos en
+                    tiempo real.</small
+                  ></span
+                >
               </li>
-
-              <li class="benefit-item">
-                <div class="benefit-icon">🎯</div>
-                <div class="benefit-text">
-                  <h4>Notificaciones a tus clientes</h4>
-                  <p>
-                    Lanza ofertas de puntos extra directamente a los usuarios de
-                    la app.
-                  </p>
-                </div>
+              <li>
+                🔔
+                <span
+                  ><b>Notificaciones a tus clientes</b
+                  ><small
+                    >Lanza ofertas de puntos extra directamente a los usuarios
+                    de la app.</small
+                  ></span
+                >
               </li>
             </ul>
           </div>
-
-          <!-- Columna derecha: Formulario de registro -->
-          <div class="register-form-card">
+          <form class="formulario" id="form-negocio">
             <h3>Continuar como establecimiento</h3>
-
-            <form action="#" method="POST" class="business-form">
-              <div class="form-group">
-                <label for="nombre-negocio">NOMBRE DEL NEGOCIO</label>
-                <input
-                  type="text"
-                  id="nombre-negocio"
-                  name="nombre-negocio"
-                  placeholder="Ej. Burgerhaus & Café"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="correo-negocio">CORREO ELECTRÓNICO</label>
-                <input
-                  type="email"
-                  id="correo-negocio"
-                  name="correo-negocio"
-                  placeholder="contacto@minegocio.com"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="celular-negocio">NÚMERO DE CELULAR</label>
-                <input
-                  type="tel"
-                  id="celular-negocio"
-                  name="celular-negocio"
-                  placeholder="+591 12345678"
-                  required
-                />
-              </div>
-
-              <div class="form-group">
-                <label for="tipo-negocio">TIPO DE NEGOCIO</label>
-                <select id="tipo-negocio" name="tipo-negocio" required>
-                  <option value="" disabled selected>
-                    Selecciona una categoría
-                  </option>
-                  <option value="comida-rapida">Comida rápida</option>
-                  <option value="cafeterias">Cafeterías</option>
-                  <option value="belleza">Belleza</option>
-                  <option value="emprendimiento">Emprendimiento</option>
-                </select>
-              </div>
-
-              <div class="form-checkbox">
-                <input type="checkbox" id="terminos" name="terminos" required />
-                <label for="terminos">
-                  Al continuar aceptas los <a href="#">Términos</a> y la
-                  <a href="#">Política de privacidad</a> de TastyPay.
-                </label>
-              </div>
-
-              <button type="submit" class="btn-submit">Validar Datos →</button>
-            </form>
-          </div>
+            <label for="nombre-negocio">NOMBRE DEL NEGOCIO</label>
+            <input
+              id="nombre-negocio"
+              type="text"
+              placeholder="Ej. Burgerhouse & Café"
+              required
+            />
+            <label for="correo-negocio">CORREO ELECTRÓNICO</label>
+            <input
+              id="correo-negocio"
+              type="email"
+              placeholder="contacto@miempresa.com"
+              required
+            />
+            <label for="celular-negocio">NÚMERO DE CELULAR</label>
+            <input
+              id="celular-negocio"
+              type="tel"
+              placeholder="+591 12345678"
+              required
+            />
+            <label for="tipo-negocio">TIPO DE NEGOCIO</label>
+            <select id="tipo-negocio" required>
+              <option value="">Selecciona una categoría</option>
+              <option>Restaurante</option>
+              <option>Cafetería</option>
+              <option>Bebidas</option>
+              <option>Emprendimiento</option>
+            </select>
+            <label class="aceptar"
+              ><input type="checkbox" required /> Al continuar acepto los
+              Términos y la Política de privacidad de TastyPay.</label
+            >
+            <button class="boton boton-azul ancho" type="submit">
+              Validar datos →
+            </button>
+            <p class="mensaje-formulario" aria-live="polite"></p>
+          </form>
         </div>
       </section>
     </main>
+
     <footer class="footer" id="footer">
       <div class="contenedor footer-columnas">
         <div>
