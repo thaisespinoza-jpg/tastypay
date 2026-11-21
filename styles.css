@@ -1,0 +1,334 @@
+/* =========================
+   ESTILOS GENERALES TASTYPAY
+   ========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --azul: #30498f;
+  --azul-oscuro: #263f83;
+  --verde: #dfff70;
+  --lila: #f1f0ff;
+  --lila-texto: #aaa9d4;
+  --texto: #202027;
+  --gris: #777985;
+  --borde: #e6e6ee;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--texto);
+  background: #fff;
+  line-height: 1.5;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font: inherit;
+}
+.contenedor {
+  width: min(1120px, 92%);
+  margin: 0 auto;
+}
+
+/* ENCABEZADO Y NAVEGACIÓN */
+.header {
+  background: #fff;
+  border-bottom: 1px solid #f1f1f5;
+  position: relative;
+  z-index: 10;
+}
+.nav {
+  min-height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+}
+.logo {
+  color: var(--azul);
+  font-weight: 900;
+  font-size: 21px;
+  font-style: italic;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+.logo span {
+  color: #243e85;
+}
+.logo small {
+  color: var(--verde);
+  font-size: 10px;
+  vertical-align: top;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.menu a {
+  color: #686b76;
+  font-size: 12px;
+}
+.menu a:hover,
+.menu a.activo {
+  color: var(--azul);
+}
+.acciones-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.boton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+  border-radius: 22px;
+  border: 1px solid transparent;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.boton:hover {
+  transform: translateY(-2px);
+}
+.boton-azul {
+  background: var(--azul);
+  color: #fff;
+}
+.boton-borde {
+  border-color: var(--azul);
+  color: var(--azul);
+  background: #fff;
+}
+.boton-pequeno {
+  padding: 7px 13px;
+  font-size: 10px;
+}
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: none;
+  color: var(--azul);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+/* TEXTOS Y SECCIONES */
+.seccion {
+  padding: 65px 0;
+}
+h1,
+h2 {
+  line-height: 1.12;
+}
+h1 {
+  font-size: clamp(34px, 4vw, 52px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+}
+h2 {
+  font-size: 30px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+}
+p {
+  color: var(--gris);
+  font-size: 13px;
+}
+.etiqueta {
+  display: inline-block;
+  color: var(--azul);
+  background: var(--verde);
+  border-radius: 20px;
+  padding: 4px 10px;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+/* PÁGINA SOBRE NOSOTROS */
+.nosotros-intro {
+  padding-top: 55px;
+  padding-bottom: 65px;
+}
+.nosotros-intro h1 {
+  font-size: 38px;
+  margin-bottom: 22px;
+}
+.texto-intro {
+  max-width: 850px;
+  margin: 22px auto 30px;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: left;
+}
+.mision-vision {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  max-width: 700px;
+  margin: 0 auto 45px;
+}
+.mision-vision article {
+  padding: 25px;
+  border-radius: 14px;
+  min-height: 165px;
+}
+.tarjeta-mision {
+  background: var(--lila);
+}
+.tarjeta-vision {
+  background: var(--azul);
+  color: #fff;
+}
+.mision-vision h2 {
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #aaa9d4;
+}
+.tarjeta-vision h2 {
+  color: #c9d1f1;
+}
+.mision-vision p {
+  font-size: 10px;
+  line-height: 1.7;
+}
+.tarjeta-vision p {
+  color: #e0e5f5;
+}
+.beneficios-nosotros {
+  max-width: 850px;
+  margin: 0 auto;
+}
+.lista-beneficios {
+  margin-top: 18px;
+}
+.lista-beneficios li {
+  display: flex;
+  gap: 10px;
+  color: var(--gris);
+  line-height: 1.7;
+  margin: 13px 0;
+  font-size: 11px;
+}
+.lista-beneficios li::before {
+  content: "✓";
+  flex: 0 0 17px;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: var(--verde);
+  color: var(--azul);
+  text-align: center;
+  line-height: 17px;
+}
+
+/* PIE DE PÁGINA */
+.footer {
+  border-top: 1px solid var(--borde);
+  padding: 35px 0 15px;
+  background: #fff;
+}
+.footer-columnas {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 25px;
+  padding-bottom: 25px;
+}
+.footer-columnas > div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+.footer-columnas p {
+  font-size: 9px;
+  margin-top: 7px;
+}
+.footer-columnas b {
+  font-size: 8px;
+  color: #8b8d9a;
+  margin-bottom: 5px;
+}
+.footer-columnas > div > a:not(.logo) {
+  font-size: 9px;
+  color: var(--gris);
+}
+.redes {
+  display: flex;
+  gap: 8px;
+}
+.redes a {
+  width: 23px;
+  height: 23px;
+  display: grid;
+  place-items: center;
+  background: var(--azul);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: bold;
+}
+.footer-final {
+  border-top: 1px solid #eee;
+  padding-top: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 8px;
+}
+
+/* ADAPTACIÓN A CELULARES */
+@media (max-width: 800px) {
+  .nav {
+    flex-wrap: wrap;
+    padding: 12px 0;
+  }
+  .menu-toggle {
+    display: block;
+    margin-left: auto;
+  }
+  .menu {
+    display: none;
+    order: 3;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 13px;
+    padding: 12px 0;
+  }
+  .menu.abierto {
+    display: flex;
+  }
+  .acciones-nav {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .seccion {
+    padding: 45px 0;
+  }
+  .mision-vision {
+    grid-template-columns: 1fr;
+  }
+  .nosotros-intro h1 {
+    font-size: 30px;
+  }
+  .footer-columnas {
+    grid-template-columns: 1fr 1fr;
+  }
+  .footer-final {
+    flex-direction: column;
+    gap: 7px;
+  }
+}
