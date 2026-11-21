@@ -315,3 +315,136 @@ select {
   font-weight: bold;
   color: #6a7282;
 }
+@media (max-width: 768px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 0;
+  }
+  .menu {
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nosotros-intro h1 {
+    font-size: 44px;
+  }
+  .nosotros-intro p {
+    margin-left: 0;
+  }
+  .tarjeta h2 {
+    font-size: 44px;
+  }
+  .lista-beneficios {
+    margin-left: 0;
+  }
+  .footer-columnas {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    padding: 14px 0;
+  }
+  .logo {
+    font-size: 26px;
+  }
+  .menu {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+  }
+  .menu a {
+    font-size: 13px;
+  }
+  .acciones-nav {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .seccion {
+    padding: 28px 0;
+  }
+  .nosotros-intro {
+    padding-top: 36px;
+  }
+  .nosotros-intro h1 {
+    font-size: 34px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .nosotros-intro .etiqueta {
+    display: table;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .nosotros-intro p {
+    margin: 16px 0 0;
+    font-size: 13px;
+    text-align: left;
+  }
+
+  .mision-vision {
+    padding: 32px 0;
+  }
+  .mision-vision-columnas {
+    flex-direction: column;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .tarjeta {
+    min-height: auto;
+    padding: 26px 22px;
+  }
+  .tarjeta h2 {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  .tarjeta p {
+    font-size: 13px;
+  }
+
+  .beneficios {
+    padding-bottom: 50px;
+  }
+  .beneficios h2.etiqueta {
+    display: block;
+    border-radius: 14px;
+    text-align: center;
+  }
+  .lista-beneficios {
+    margin-top: 26px;
+  }
+  .lista-beneficios li {
+    margin-bottom: 16px;
+    font-size: 13px;
+    text-align: left;
+  }
+  .lista-beneficios h3,
+  .lista-beneficios p {
+    font-size: 13px;
+  }
+
+  .footer-columnas {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: 22px;
+  }
+  .logo-footer img {
+    margin: 0 auto;
+  }
+  .redes {
+    justify-content: center;
+  }
+  .footer-final {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 6px;
+  }
+}
